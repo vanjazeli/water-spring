@@ -1,7 +1,21 @@
 // header
 
-* {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   padding: 40px;
+   width: 100%;
+   @include flex-sb-c;
+}
+
+.header__logo {
+   width: 28px;
+}
+
+.header__links {
+   > :not(:last-child) {
+      margin-right: 40px;
+   }
 }
