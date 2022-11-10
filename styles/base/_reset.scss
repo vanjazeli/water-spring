@@ -107,6 +107,10 @@ body {
   font-family: $default-font;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 button {
   background: none;
   border: none;

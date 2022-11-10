@@ -8,18 +8,29 @@
         <link rel="stylesheet" href="styles/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
         <script type="module" src="app/global.js"></script>
    </head>
    <body>
-        <header class="header">
+        <header class="header js-header">
             <img src="assets/images/drop.svg" alt="drop" class="header__logo">
-            <nav class="header__links">
-                <a href="javascript:;" class="nav-link hover-default">About Us</a>
-                <a href="javascript:;" class="nav-link hover-default">Public</a>
-                <a href="javascript:;" class="nav-link hover-default">Third Item</a>
-                <a href="javascript:;" class="nav-link nav-link--block">Contact</a>
+            <nav class="header__nav js-header-nav">
+                <div class="header__links-wrap">
+                    <div class="header__links">
+                        <a href="javascript:;" class="nav-link hover-default">About Us</a>
+                        <a href="javascript:;" class="nav-link hover-default">Public</a>
+                        <a href="javascript:;" class="nav-link hover-default">Third Item</a>
+                        <a href="javascript:;" class="nav-link nav-link--block">Contact</a>
+                    </div>
+                    <button class="header__close js-header-close">
+                        <span class="header__close-first"></span>
+                        <span class="header__close-second"></span>
+                    </button>
+                </div>
             </nav>
+            <button class="header__open js-header-open">
+                <span class="header__open-icon"></span>
+            </button>
         </header>
         <main>
             <section class="banner">
@@ -35,19 +46,19 @@
                             <span class="banner__heading-content">OAZA VODA</span>
                         </h1>
                         <p class="banner__paragraph text-l">Jedinstvena voda <span class="bold">netaknuta</span> iz prirode.</p>
-                        <p class="banner__text text-xs light">Osnovni element zivota.</p>
-                        <button class="banner__button arrow-button hover-default" type="button">Saznajte vise<img src="assets/images/arrow.svg" alt="arrow" class="arrow-button__icon"></button>
+                        <p class="banner__text text-s light">Osnovni element zivota.</p>
+                        <button class="banner__button arrow-button hover-default js-banner-button" type="button">Saznajte vise<img src="assets/images/arrow.svg" alt="arrow" class="arrow-button__icon"></button>
                     </div>
                 </div>
                 <div class="banner__animation">
                     <div class="banner__animation-mask">
-                        <div class="banner__animation-line">
-                            
-                        </div>
+                        <div class="banner__animation-line"></div>
                     </div>
                 </div>
             </section>
+            <section class="information" style="height:200vh">
+                <div class="banner__wrap"></div>
+            </section>
         </main>
-        <div style="height:200vh"></div>
    </body>
 </html>
