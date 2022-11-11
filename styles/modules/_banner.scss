@@ -28,6 +28,7 @@
 .banner__wrap {
     height: 100%;
     display: flex;
+    max-width: 1400px;
 }
 
 .banner__video-wrap {
@@ -83,7 +84,7 @@
     border-radius: 20px;
     outline: $white 1px solid;
 
-    @include mobile{
+    @include mobile {
         display: none;
     }
 }

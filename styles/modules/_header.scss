@@ -7,9 +7,10 @@
    z-index: 100;
    padding: 20px 40px;
    width: 100%;
+   backdrop-filter: blur(0px);
    @include flex-sb-c;
    transition: $transition-fast;
-   transition-property: background-color box-shadow;
+   transition-property: background-color box-shadow backdrop-filter;
 
    @include mobile {
       padding: 20px;
@@ -17,7 +18,8 @@
 }
 
 .header--black {
-   background-color: $black;
+   background-color: rgba($black, 0.8);
+   backdrop-filter: blur(10px);
    box-shadow:
       0px 2.4px 10px rgba(0, 0, 0, 0.185),
       0px 19px 80px rgba(0, 0, 0, 0.37);

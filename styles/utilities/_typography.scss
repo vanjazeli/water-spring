@@ -47,6 +47,7 @@
     }
 }
 
+
 .h3 {
     font-size: 36px;
     line-height: 120%;
@@ -171,4 +172,47 @@
 
 .bold {
     font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.hollow-white {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $white;
+}
+
+.hollow-black {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $black;
+}
+
+.primary {
+    color: $primary;
+}
+
+.text-line {
+    padding: 0 40px;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        top: calc(50% + 2px);
+        background-color: $primary;
+    }
+
+    &::after {
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: calc(50% + 2px);
+        background-color: $primary;
+    }
 }

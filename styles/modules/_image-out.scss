@@ -1,0 +1,64 @@
+// image-out
+.image-out {
+    padding: 220px 0 160px;
+
+    @include tablet {
+        padding: 180px 0 120px;
+    }
+
+    @include phone {
+        padding: 160px 0 100px;
+    }
+}
+
+.image-out__holder {
+    background-color: $black;
+}
+
+.image-out__wrap {
+    position: relative;
+}
+
+.image-out__image-wrap {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    width: 70%;
+    height: calc(100% + 180px);
+}
+
+.image-out__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-out__content {
+    padding: 100px 0;
+    position: relative;
+    max-width: 650px;
+    z-index: 3;
+    color: $white;
+
+    @include mobile {
+        max-width: 450px;
+    }
+}
+
+.image-out__heading {
+    margin-bottom: 60px;
+    max-width: 500px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}
+
+.image-out__paragraph {
+    margin-bottom: 80px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}

@@ -1,4 +1,8 @@
 // links
+a {
+    display: inline-block;
+}
+
 .nav-link {
     color: $white;
     font-size: 22px;
@@ -18,11 +22,40 @@
     }
 }
 
+.block-link {
+    background-color: $black;
+    color: $white;
+    padding: 18px 24px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    @include hover {
+        .block-link__icon {
+            transform: rotate(0);
+        }
+    }
+}
+
+.block-link--white {
+    background-color: $white;
+    color: $black;
+}
+
+.block-link__icon {
+    width: 12px;
+    transform: rotate(45deg);
+    margin-left: 4px;
+    transition: $transition-primary;
+    transition-property: transform;
+}
+
 .hover-default {
     transition: $transition-primary;
     transition-property: opacity;
 
     @include hover {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 }

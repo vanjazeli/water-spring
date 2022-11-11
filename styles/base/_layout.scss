@@ -1,5 +1,5 @@
 .loader {
-    background-color: $white;
+    background-color: $black;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -16,6 +16,14 @@
 
 .wrap {
     max-width: 1400px;
-    padding: 0 25px;
+    padding: 0 80px;
     margin: 0 auto;
+
+    @include tablet {
+        padding: 0 25px;
+    }
+
+    @include phone {
+        padding: 0 20px;
+    }
 }

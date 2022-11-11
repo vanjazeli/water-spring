@@ -14,7 +14,7 @@ const banner = {
         });
 
         this.button.addEventListener("click",() => {
-            window.scrollBy({top: window.innerHeight, behavior: 'smooth'});
+            window.scrollBy({top: window.innerHeight - 82, behavior: 'smooth'});
         })
     }
 
