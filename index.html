@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden">
    <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,14 +12,15 @@
         <script type="module" src="app/global.js"></script>
    </head>
    <body>
+        <div class="loader js-loader"></div>
         <header class="header js-header">
             <img src="assets/images/drop.svg" alt="drop" class="header__logo">
             <nav class="header__nav js-header-nav">
                 <div class="header__links-wrap">
                     <div class="header__links">
+                        <a href="javascript:;" class="nav-link hover-default">Home</a>
                         <a href="javascript:;" class="nav-link hover-default">About Us</a>
-                        <a href="javascript:;" class="nav-link hover-default">Public</a>
-                        <a href="javascript:;" class="nav-link hover-default">Third Item</a>
+                        <a href="javascript:;" class="nav-link hover-default">Project</a>
                         <a href="javascript:;" class="nav-link nav-link--block">Contact</a>
                     </div>
                     <button class="header__close js-header-close">

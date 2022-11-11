@@ -1,10 +1,10 @@
+import helpers from "./helpers.js";
+
 const header = {
     header: document.querySelector(".js-header"),
     nav: document.querySelector(".js-header-nav"),
     open: document.querySelector(".js-header-open"),
     close: document.querySelector(".js-header-close"),
-
-    animationDuration: 300,
 
     init: function(){
         this.settings();
@@ -23,6 +23,7 @@ const header = {
 
     openNav: function(){
         this.nav.style.display = 'block';
+        helpers.disableScroll();
         setTimeout(()=>{
             this.nav.classList.add('header__nav--active');
         },50);
@@ -30,9 +31,10 @@ const header = {
 
     closeNav: function(){
         this.nav.classList.remove('header__nav--active');
-        setTimeout(()=>{
+        this.nav.addEventListener('transitionend',() => {
             this.nav.removeAttribute('style');
-        },this.animationDuration);
+            helpers.enableScroll();
+        },{once: true});
     },
 
     scroll: function(){
