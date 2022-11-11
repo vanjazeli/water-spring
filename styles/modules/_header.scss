@@ -33,7 +33,7 @@
    @include mobile {
       position: fixed;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       z-index: 101;
       top: 0;
       left: 0;
@@ -83,10 +83,16 @@
    position: absolute;
    top: 20px;
    right: 20px;
+   transition: $transition-primary;
+   transition-property: transform;
 
    @include desktop {
       display: none;
    }
+}
+
+.header__close--active {
+   transform: rotate(-180deg);
 }
 
 .header__close-first {

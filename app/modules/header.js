@@ -26,11 +26,13 @@ const header = {
         helpers.disableScroll();
         setTimeout(()=>{
             this.nav.classList.add('header__nav--active');
+            this.close.classList.add('header__close--active');
         },50);
     },
-
+    
     closeNav: function(){
         this.nav.classList.remove('header__nav--active');
+        this.close.classList.remove('header__close--active');
         this.nav.addEventListener('transitionend',() => {
             this.nav.removeAttribute('style');
             helpers.enableScroll();
