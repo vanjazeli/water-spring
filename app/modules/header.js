@@ -37,7 +37,7 @@ const header = {
 
     scroll: function(){
         window.addEventListener("scroll", ()=>{
-            if(window.scrollY > 300){
+            if(window.scrollY > window.innerHeight - 200){
                 this.header.classList.add('header--black');
             }else{
                 this.header.classList.remove('header--black');
