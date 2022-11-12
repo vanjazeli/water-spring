@@ -12,15 +12,15 @@
         <script type="module" src="app/global.js"></script>
    </head>
    <body>
-        <div class="loader js-loader"></div>
+        <!-- <div class="loader js-loader"></div> -->
         <header class="header js-header">
             <img src="assets/images/drop.svg" alt="drop" class="header__logo">
             <nav class="header__nav js-header-nav">
                 <div class="header__links-wrap">
                     <div class="header__links">
-                        <a href="javascript:;" class="nav-link hover-default">Home</a>
-                        <a href="javascript:;" class="nav-link hover-default">About Us</a>
-                        <a href="javascript:;" class="nav-link hover-default">Project</a>
+                        <a href="javascript:;" class="nav-link">Home</a>
+                        <a href="javascript:;" class="nav-link">About Us</a>
+                        <a href="javascript:;" class="nav-link">Project</a>
                         <a href="javascript:;" class="nav-link nav-link--block">Contact</a>
                     </div>
                     <button class="header__close js-header-close">
@@ -59,7 +59,7 @@
                 </div>
             </section>
             <!-- horizontal -->
-            <section class="horizontal">
+            <section class="horizontal js-image-zoom-module">
                 <div class="wrap">
                     <div class="horizontal__top">
                         <h2 class="horizontal__heading h2">Lorem, ipsum.</h2>
@@ -69,14 +69,14 @@
                     <div class="horizontal__holder">
                         <div class="horizontal__image-holder">
                             <div class="horizontal__image-wrap">
-                                <img src="assets/images/forest-waterfall.jpg" alt="forest-waterfall" class="horizontal__image">
+                                <img src="assets/images/forest-waterfall.jpg" alt="forest-waterfall" class="horizontal__image zoom-image js-image-zoom-image">
                             </div>
                         </div>
                         <div class="horizontal__paragraphs">
                             <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam suscipit maxime minus consequuntur eius illo tempora hic esse. Quasi ratione sunt mollitia, dolores nisi placeat porro temporibus eum vel voluptate repellendus labore exercitationem alias architecto voluptatibus dicta adipisci quaerat ut?</p>
                             <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident soluta consequatur nobis. Voluptate inventore totam harum saepe recusandae quibusdam! Nobis cum excepturi velit, dolorum dolore sapiente. Dignissimos iusto repellat quos, accusamus error delectus id nemo, molestiae sint ullam laborum consequatur ad natus enim quo doloribus facilis nihil quia.</p>
                             <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore delectus amet expedita repellendus sunt dolor, necessitatibus consequuntur, mollitia nemo, temporibus distinctio alias cumque dicta dolorem numquam a id? Voluptatibus tempora nihil veniam quidem iusto quos quaerat aliquam explicabo obcaecati sit magni corporis, repudiandae in, reiciendis perspiciatis, necessitatibus libero. Dolores nesciunt saepe sunt ullam.</p>
-                            <a href="javascript:;" class="block-link hover-default">Saznajte vise <img src="assets/images/arrow.svg" alt="arrow" class="block-link__icon"></a>
+                            <a href="javascript:;" class="block-link hover-default js-image-zoom-link">Saznajte vise <img src="assets/images/arrow.svg" alt="arrow" class="block-link__icon zoom-image"></a>
                         </div>
                     </div>
                     <!-- <div class="horizontal__holder horizontal__holder--reverse">
@@ -94,22 +94,22 @@
                 </div>
             </section>
             <!-- image-out -->
-            <section class="image-out js-image-out">
+            <section class="image-out js-image-zoom-module">
                 <div class="image-out__holder">
                     <div class="image-out__wrap wrap">
                         <div class="image-out__image-wrap">
-                            <img src="assets/images/forest-waterfall.jpg" alt="forest-waterfall" class="image-out__image js-image-out-image">
+                            <img src="assets/images/forest-waterfall.jpg" alt="forest-waterfall" class="image-out__image zoom-image js-image-zoom-image">
                         </div>
                         <div class="image-out__content">
                             <h2 class="image-out__heading h2"><span class="image-out__heading-content">Lorem ipsum dolor sit amet, consectetur.</span></h2>
                             <p class="image-out__paragraph text-m">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa doloribus commodi inventore, quo nostrum blanditiis? Quibusdam deserunt delectus quia saepe error omnis odit consequuntur asperiores distinctio veniam ullam obcaecati, placeat laboriosam sunt laborum aliquid ratione fugiat.</p>
-                            <a href="javascript:;" class="block-link block-link--white hover-default js-image-out-link">Saznajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            <a href="javascript:;" class="block-link block-link--white hover-default js-image-zoom-link">Saznajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- horizontal - fraction -->
-            <section class="horizontal">
+            <section class="horizontal js-image-zoom-module">
                 <div class="wrap">
                     <div class="horizontal__top">
                         <h2 class="horizontal__heading h2">Lorem, ipsum.</h2>
@@ -120,56 +120,125 @@
                         <div class="horizontal__paragraphs">
                             <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam suscipit maxime minus consequuntur eius illo tempora hic esse. Quasi ratione sunt mollitia, dolores nisi placeat porro temporibus eum vel voluptate repellendus labore exercitationem alias architecto voluptatibus dicta adipisci quaerat ut?</p>
                             <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident soluta consequatur nobis. Voluptate inventore totam harum saepe recusandae quibusdam! Nobis cum excepturi velit, dolorum dolore sapiente. Dignissimos iusto repellat quos, accusamus error delectus id nemo, molestiae sint ullam laborum consequatur ad natus enim quo doloribus facilis nihil quia.</p>
-                            <a href="javascript:;" class="block-link hover-default">Saznajte vise <img src="assets/images/arrow.svg" alt="arrow" class="block-link__icon"></a>
+                            <a href="javascript:;" class="block-link hover-default js-image-zoom-link">Saznajte vise <img src="assets/images/arrow.svg" alt="arrow" class="block-link__icon"></a>
                         </div>
                         <div class="horizontal__image-holder">
                             <div class="horizontal__image-wrap">
-                                <img src="assets/images/water-glass.jpg" alt="water-glass" class="horizontal__image">
+                                <img src="assets/images/water-glass.jpg" alt="water-glass" class="horizontal__image zoom-image js-image-zoom-image">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- three-columns -->
-            <section class="three-columns">
+            <section class="three-columns js-three-columns">
+                <div class="three-columns__image-wrap">
+                    <img src="assets/images/three-colums-default.jpg" alt="three-columns-defualt" class="three-columns__image three-columns__image--default">
+                    <img src="assets/images/card-background-1.jpg" alt="card-background-1" class="three-columns__image js-three-columns-image">
+                    <img src="assets/images/card-background-2.jpg" alt="card-background-2" class="three-columns__image js-three-columns-image">
+                    <img src="assets/images/card-background-3.jpg" alt="card-background-3" class="three-columns__image js-three-columns-image">
+                    <img src="assets/images/card-background-4.jpg" alt="card-background-4" class="three-columns__image js-three-columns-image">
+                    <img src="assets/images/card-background-5.jpg" alt="card-background-5" class="three-columns__image js-three-columns-image">
+                </div>
                 <div class="three-columns__wrap wrap">
-                    <div class="three-columns__main-card card card--no-border">
-                        <span class="card__tag text-s">Lorem, ipsum.</span>
-                        <h2 class="card__heading h4">Lorem ipsum dolor sit amet.</h2>
-                        <p class="card__paragraph text-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                    <div class="three-columns__description">
+                        <div class="three-columns__main-card card js-three-columns-main">
+                            <span class="card__tag">Blog Article</span>
+                            <h2 class="card__heading h4">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+                            <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                            <a href="javascript:;" class="card__link block-link block-link--white block-link--small">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                        </div>
                     </div>
-                    <div class="three-columns__grid">
-                        <div class="card">
-                            <div class="card__background-wrap">
-                                <img src="card-background-1.jpg" alt="card-background-1" class="card__background">
+                    <div class="three-columns__cards">
+                        <div class="card card--border js-three-columns-card">
+                            <div class="card__image-wrap">
+                                <img src="assets/images/card-background-1.jpg" alt="card-background-1" class="card__image">
                             </div>
-                            <span class="card__tag text-s">Lorem, ipsum.</span>
-                            <h2 class="card__heading h4">Lorem ipsum dolor sit amet.</h2>
-                            <p class="card__paragraph text-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                            <div class="card__content">
+                                <span class="card__tag">Blog Article</span>
+                                <h2 class="card__heading h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius!</h2>
+                                <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                                <a href="javascript:;" class="card__link block-link block-link--white block-link--small js-three-columns-link">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="card__background-wrap">
-                                <img src="card-background-1.jpg" alt="card-background-1" class="card__background">
+                        <div class="card card--border js-three-columns-card">
+                            <div class="card__image-wrap">
+                                <img src="assets/images/card-background-2.jpg" alt="card-background-2" class="card__image">
                             </div>
-                            <span class="card__tag text-s">Lorem, ipsum.</span>
-                            <h2 class="card__heading h4">Lorem ipsum dolor sit amet.</h2>
-                            <p class="card__paragraph text-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                            <div class="card__content">
+                                <span class="card__tag">Blog Article</span>
+                                <h2 class="card__heading h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius!</h2>
+                                <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                                <a href="javascript:;" class="card__link block-link block-link--white block-link--small js-three-columns-link">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="card__background-wrap">
-                                <img src="card-background-1.jpg" alt="card-background-1" class="card__background">
+                        <div class="card card--border js-three-columns-card">
+                            <div class="card__image-wrap">
+                                <img src="assets/images/card-background-3.jpg" alt="card-background-3" class="card__image">
                             </div>
-                            <span class="card__tag text-s">Lorem, ipsum.</span>
-                            <h2 class="card__heading h4">Lorem ipsum dolor sit amet.</h2>
-                            <p class="card__paragraph text-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                            <div class="card__content">
+                                <span class="card__tag">Blog Article</span>
+                                <h2 class="card__heading h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius!</h2>
+                                <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                                <a href="javascript:;" class="card__link block-link block-link--white block-link--small js-three-columns-link">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="card__background-wrap">
-                                <img src="card-background-1.jpg" alt="card-background-1" class="card__background">
+                        <div class="card card--border js-three-columns-card">
+                            <div class="card__image-wrap">
+                                <img src="assets/images/card-background-4.jpg" alt="card-background-4" class="card__image">
                             </div>
-                            <span class="card__tag text-s">Lorem, ipsum.</span>
-                            <h2 class="card__heading h4">Lorem ipsum dolor sit amet.</h2>
-                            <p class="card__paragraph text-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                            <div class="card__content">
+                                <span class="card__tag">Blog Article</span>
+                                <h2 class="card__heading h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius!</h2>
+                                <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                                <a href="javascript:;" class="card__link block-link block-link--white block-link--small js-three-columns-link">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            </div>
+                        </div>
+                        <div class="card card--border js-three-columns-card">
+                            <div class="card__image-wrap">
+                                <img src="assets/images/card-background-5.jpg" alt="card-background-5" class="card__image">
+                            </div>
+                            <div class="card__content">
+                                <span class="card__tag">Blog Article</span>
+                                <h2 class="card__heading h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius!</h2>
+                                <p class="card__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum ea rerum eum illum. Exercitationem quis fuga fugit dolore veritatis?</p>
+                                <a href="javascript:;" class="card__link block-link block-link--white block-link--small js-three-columns-link">Procitajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- horizontal -->
+            <section class="horizontal js-image-zoom-module">
+                <div class="wrap">
+                    <div class="horizontal__top">
+                        <h2 class="horizontal__heading h2">Lorem, ipsum.</h2>
+                        <p class="horizontal__tag tag text-s">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="horizontal__holder">
+                        <div class="horizontal__image-holder">
+                            <div class="horizontal__image-wrap">
+                                <img src="assets/images/mountains-spring.jpg" alt="mountains-spring" class="horizontal__image zoom-image js-image-zoom-image">
+                            </div>
+                        </div>
+                        <div class="horizontal__paragraphs">
+                            <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam suscipit maxime minus consequuntur eius illo tempora hic esse. Quasi ratione sunt mollitia, dolores nisi placeat porro temporibus eum vel voluptate repellendus labore exercitationem alias architecto voluptatibus dicta adipisci quaerat ut?</p>
+                            <p class="horizontal__paragraph text-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident soluta consequatur nobis. Voluptate inventore totam harum saepe recusandae quibusdam! Nobis cum excepturi velit, dolorum dolore sapiente. Dignissimos iusto repellat quos, accusamus error delectus id nemo, molestiae sint ullam laborum consequatur ad natus enim quo doloribus facilis nihil quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- image-out -->
+            <section class="image-out image-out--reverse js-image-zoom-module">
+                <div class="image-out__holder">
+                    <div class="image-out__wrap wrap">
+                        <div class="image-out__image-wrap">
+                            <img src="assets/images/three-colums-default.jpg" alt="three-columns-default.jpg" class="image-out__image zoom-image js-image-zoom-image">
+                        </div>
+                        <div class="image-out__content">
+                            <h2 class="image-out__heading h2"><span class="image-out__heading-content">Lorem ipsum dolor sit amet, consectetur.</span></h2>
+                            <p class="image-out__paragraph text-m">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa doloribus commodi inventore, quo nostrum blanditiis? Quibusdam deserunt delectus quia saepe error omnis odit consequuntur asperiores distinctio veniam ullam obcaecati, placeat laboriosam sunt laborum aliquid ratione fugiat.</p>
+                            <a href="javascript:;" class="block-link block-link--white hover-default js-image-zoom-link">Saznajte vise <img src="assets/images/arrow-black.svg" alt="arrow-black" class="block-link__icon"></a>
                         </div>
                     </div>
                 </div>

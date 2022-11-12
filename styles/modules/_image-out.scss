@@ -1,13 +1,24 @@
 // image-out
 .image-out {
-    padding: 220px 0 160px;
+    padding: 230px 0 170px;
 
     @include tablet {
-        padding: 180px 0 120px;
+        padding: 190px 0 130px;
     }
 
     @include phone {
-        padding: 160px 0 100px;
+        padding: 170px 0 110px;
+    }
+}
+
+.image-out--reverse {
+    .image-out__image-wrap {
+        right: unset;
+        left: 0;
+    }
+
+    .image-out__content {
+        margin-left: auto;
     }
 }
 
@@ -35,10 +46,6 @@
     position: relative;
     transition: $transition-primary;
     transition-property: transform;
-}
-
-.image-out__image--active {
-    transform: scale(1.09);
 }
 
 .image-out__content {

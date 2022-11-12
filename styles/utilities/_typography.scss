@@ -64,6 +64,15 @@
 }
 
 .h4 {
+    font-size: 28px;
+    line-height: 120%;
+
+    @include mobile {
+        font-size: 24px
+    }
+}
+
+.h5 {
     font-size: 24px;
     line-height: 120%;
 
@@ -72,16 +81,12 @@
         letter-spacing: -0.02em;
     }
 
-    @include tablet {
-        font-size: 24px;
-    }
-
     @include phone {
         font-size: 21px;
     }
 }
 
-.h5 {
+.h6 {
     font-size: 18px;
     line-height: 120%;
 
@@ -89,17 +94,6 @@
         line-height: 104%;
         letter-spacing: -0.02em;
         font-size: 18px;
-    }
-}
-
-.h6 {
-    font-size: 14px;
-    line-height: 120%;
-
-    @include mobile {
-        font-size: 14px;
-        line-height: 105%;
-        letter-spacing: -0.02em;
     }
 }
 
