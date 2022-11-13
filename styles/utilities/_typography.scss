@@ -38,12 +38,10 @@
 
     @include tablet {
         font-size: 34px;
-        line-height: 82%;
     }
 
     @include phone {
         font-size: 28px;
-        line-height: 86%;
     }
 }
 

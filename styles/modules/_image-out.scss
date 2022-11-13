@@ -12,14 +12,23 @@
 }
 
 .image-out--reverse {
+    .image-out__wrap {
+        &::after {
+            left: 0;
+            right: unset;
+        }
+    }
+
     .image-out__image-wrap {
         right: unset;
         left: 0;
+
     }
 
     .image-out__content {
         margin-left: auto;
     }
+
 }
 
 .image-out__holder {
@@ -28,6 +37,16 @@
 
 .image-out__wrap {
     position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -60px;
+        width: 70%;
+        height: calc(100% + 180px);
+        background-color: rgba($black, 0.3);
+    }
 }
 
 .image-out__image-wrap {
