@@ -7,6 +7,7 @@ const general = {
     init: function(){
         this.loaderSettings();
         this.zoomImageSettings();
+        console.log('general.init()');
     },
 
     loaderSettings: function(){
@@ -16,6 +17,7 @@ const general = {
 
         window.addEventListener('load',() => {
             setTimeout(()=>{
+                console.log('general.loaderSettings()');
                 this.loader.classList.add('loader--fade-out');
                 helpers.enableScroll();
             },3000);
