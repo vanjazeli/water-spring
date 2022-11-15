@@ -9,4 +9,3 @@ banner.init();
 header.init();
 threeColumns.init();
 animations.init();
-console.log("global.js");
