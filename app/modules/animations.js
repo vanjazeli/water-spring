@@ -7,7 +7,7 @@ const animations = {
 
     bannerLoad: function(){
         window.addEventListener('load',() => {
-            setTimeout(()=>{
+            setTimeout(() => {
                 this.banner.classList.add('banner--animation');
             },3500);
         });
