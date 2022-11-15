@@ -5,7 +5,7 @@ const general = {
     zoomLinks: document.querySelectorAll('.js-image-zoom-link'),
 
     init: function(){
-        // this.loaderSettings();
+        this.loaderSettings();
         this.zoomImageSettings();
     },
 
