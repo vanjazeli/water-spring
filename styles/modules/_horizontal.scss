@@ -21,6 +21,8 @@
     max-width: 500px;
 
     @include mobile {
+        width: 100%;
+        text-align: center;
         margin: 0 auto 40px;
     }
 }
@@ -33,7 +35,7 @@
     position: absolute;
     height: 120px;
     top: -20px;
-    left: -20px;
+    left: 20px;
     opacity: 0.1;
 
     @include mobile {
