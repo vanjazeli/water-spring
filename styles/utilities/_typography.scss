@@ -15,6 +15,18 @@
     }
 }
 
+.h1-small{
+    font-size: 70px;
+
+    @include tablet{
+        font-size: 50px;
+    }
+
+    @include phone{
+        font-size: 30px;
+    }
+}
+
 .h2-l {
     font-size: 70px;
     line-height: 120%;
