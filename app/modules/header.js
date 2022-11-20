@@ -1,10 +1,11 @@
-import helpers from "./helpers.js";
 
 const header = {
     header: document.querySelector(".js-header"),
     nav: document.querySelector(".js-header-nav"),
     open: document.querySelector(".js-header-open"),
     close: document.querySelector(".js-header-close"),
+
+    links: document.querySelectorAll('.js-header-link'),
 
     init: function(){
         this.settings();
@@ -19,11 +20,16 @@ const header = {
         this.close.addEventListener("click",()=>{
             this.closeNav();
         });
+
+        this.links.forEach(link=>{
+            link.addEventListener("click",() => {
+                this.closeNav();
+            })
+        })
     },
 
     openNav: function(){
         this.nav.style.display = 'block';
-        helpers.disableScroll();
         setTimeout(()=>{
             this.nav.classList.add('header__nav--active');
             this.close.classList.add('header__close--active');
@@ -35,7 +41,6 @@ const header = {
         this.close.classList.remove('header__close--active');
         this.nav.addEventListener('transitionend',() => {
             this.nav.removeAttribute('style');
-            helpers.enableScroll();
         },{once: true});
     },
 

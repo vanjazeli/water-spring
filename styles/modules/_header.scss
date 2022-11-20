@@ -12,7 +12,7 @@
    transition: $transition-fast;
    transition-property: background-color box-shadow backdrop-filter;
 
-   @include mobile {
+   @include small {
       padding: 20px;
    }
 }
@@ -30,7 +30,7 @@
 }
 
 .header__nav {
-   @include mobile {
+   @include small {
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -52,7 +52,7 @@
 }
 
 .header__links-wrap {
-   @include mobile {
+   @include small {
       position: relative;
       height: 100%;
       width: 100%;
@@ -65,7 +65,7 @@
       margin-right: 40px;
    }
 
-   @include mobile {
+   @include small {
       @include flex-c-c;
       flex-direction: column;
 
@@ -85,9 +85,10 @@
    right: 20px;
    transition: $transition-primary;
    transition-property: transform;
-
-   @include desktop {
-      display: none;
+   display: none;
+   
+   @include small {
+      display: flex;
    }
 }
 
@@ -116,7 +117,7 @@
    justify-content: center;
    align-items: center;
 
-   @include mobile {
+   @include small {
       display: flex;
    }
 }

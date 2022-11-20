@@ -18,10 +18,13 @@
             <nav class="header__nav js-header-nav">
                 <div class="header__links-wrap">
                     <div class="header__links">
-                        <a href="javascript:;" class="nav-link">Home</a>
-                        <a href="javascript:;" class="nav-link">About Us</a>
-                        <a href="javascript:;" class="nav-link">Project</a>
-                        <a href="javascript:;" class="nav-link nav-link--block">Contact</a>
+                        <a href="#home" class="nav-link js-header-link">Home</a>
+                        <a href="#history" class="nav-link js-header-link">History</a>
+                        <a href="#our-water" class="nav-link js-header-link">Our Water</a>
+                        <a href="#water-and-life" class="nav-link js-header-link">Water and Life</a>
+                        <a href="#blog" class="nav-link js-header-link">Blog</a>
+                        <a href="#recommendations" class="nav-link js-header-link">Recommendations</a>
+                        <a href="#contact" class="nav-link nav-link--block js-header-link">Contact</a>
                     </div>
                     <button class="header__close js-header-close">
                         <span class="header__close-first"></span>
@@ -34,7 +37,7 @@
             </button>
         </header>
         <main>
-            <section class="banner js-banner">
+            <section class="banner js-banner" id="home">
                 <div class="banner__overlay js-banner-overlay"></div>
                 <div class="banner__wrap wrap">
                     <div class="banner__video-wrap">
@@ -57,7 +60,7 @@
                     </div>
                 </div>
             </section>
-            <section class="horizontal js-image-zoom-module">
+            <section class="horizontal js-image-zoom-module" id="history">
                 <div class="wrap">
                     <div class="horizontal__top">
                         <h2 class="horizontal__heading h2">HISTORY AND ORIGIN</h2>
@@ -78,7 +81,7 @@
                     </div>
                 </div>
             </section>
-            <section class="image-out js-image-zoom-module">
+            <section class="image-out js-image-zoom-module" id="our-water">
                 <div class="image-out__holder">
                     <div class="image-out__wrap wrap">
                         <div class="image-out__image-wrap">
@@ -129,7 +132,6 @@
                     <div class="three-columns__description">
                         <div class="three-columns__main-card card js-three-columns-main">
                             <span class="card__tag">REASONS</span>
-                            <!-- <h2 class="card__heading h4">WHY OAZA AQUA?</h2> -->
                             <p class="card__paragraph text-s">"Water is one of the most studied substances, but it is still the leeast understood... Nothing is as compplex as its behavior." John Emsley</p>
                         </div>
                     </div>
@@ -198,7 +200,7 @@
                     </div>
                 </div>
             </section>
-            <section class="horizontal">
+            <section class="horizontal" id="water-and-life">
                 <div class="wrap">
                     <div class="horizontal__top">
                         <h2 class="horizontal__heading h2">Water and life</h2>
@@ -239,7 +241,7 @@
                     </div>
                 </div>
             </section>
-            <section class="horizontal">
+            <section class="horizontal" id="blog">
                 <div class="wrap">
                     <div class="horizontal__top">
                         <h2 class="horizontal__heading h2">BLOG</h2>
@@ -296,7 +298,7 @@
                     </div>
                 </div>
             </section>
-            <section class="image-out image-out--reverse js-image-zoom-module">
+            <section class="image-out image-out--reverse js-image-zoom-module" id="recommendations">
                 <div class="image-out__holder">
                     <div class="image-out__wrap wrap">
                         <div class="image-out__image-wrap">
@@ -315,27 +317,6 @@
                     </div>
                 </div>
             </section>
-            <!-- <section class="horizontal">
-                <div class="wrap">
-                    <div class="horizontal__top">
-                        <h2 class="horizontal__heading h2">MINERAL COMPOSITION OF WATER AND WHY IT IS IMPORTANT?</h2>
-                        <p class="horizontal__tag tag text-s">If there is magic it is contained in water.</p>
-                    </div>
-                    <div class="horizontal__holder horizontal__holder--reverse">
-                        <div class="horizontal__paragraphs">
-                            <p class="horizontal__paragraph text-s">Oaza water belongs to the sources where people had no influence when the water basin was created and represents a real treasure because it is an untouched part of nature that is being exploited.
-
-                                It is declared as natural mineral water and as such must not be treated with any chemical preparations before bottling, but can be only filled from the source to the bottle.</p>
-                            <p class="horizontal__paragraph text-s">Oaza water can be bottled in pure, untouched nature, right at the source, so that none of its precious properties are lost. The waters from this area belong to waters of medium low mineralization, which means that they can be drunk daily in unlimited quantities.</p>
-                        </div>
-                        <div class="horizontal__image-holder">
-                            <div class="horizontal__image-wrap">
-                                <img src="assets/images/forest-spring.jpg" alt="lake-moraine" class="horizontal__image zoom-image js-image-zoom-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
             <section class="image">
                 <div class="image__image-wrap">
                     <img src="assets/images/lake-moraine.jpg" alt="lake-moraine" class="image__image">
@@ -350,7 +331,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer__content">
                 <div class="footer__wrap wrap">
                     <div class="footer__segment">

@@ -105,6 +105,10 @@ body {
   font-family: $default-font;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 button {
   background: none;
   border: none;
